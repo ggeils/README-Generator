@@ -14,6 +14,8 @@ const generateREADME = ({ title, description, installation, usage, license,
  - [Tests](#tests)
  - [Questions](#questions)
 
+ [![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)]
+
  ## Description
  ${description}
 
@@ -24,7 +26,7 @@ const generateREADME = ({ title, description, installation, usage, license,
  ${usage}
 
  ## License
- ${license}
+ This project is covered under the ${license} license.
 
  ## Contributing
  ${contributing}
@@ -34,6 +36,9 @@ const generateREADME = ({ title, description, installation, usage, license,
 
  ## Questions
  ${questions}
+ Reach me with additional questions at:
+ [GitHub URL](https://www.github.com/${github}/)
+ [Email Me](mailto:${email})
   `;
 
 inquirer
