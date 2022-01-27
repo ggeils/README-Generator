@@ -47,11 +47,21 @@ inquirer
         name: 'email',
         message: 'What is your email?',
     },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'What are your test instructions?',
+    },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'Peviously asked questions?',
+    },
   ])
   .then((answers) => {
-    const htmlPageContent = generateREADME(answers);
+    const readmeContent = generateREADME(answers);
 
-    fs.writeFile('index.html', htmlPageContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
+    fs.writeFile('README.md', readmeContent, (err) =>
+      err ? console.log(err) : console.log('Successfully generated README.md!')
     );
   });
