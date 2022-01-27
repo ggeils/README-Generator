@@ -14,30 +14,53 @@ const generateREADME = ({ title, description, installation, usage, license,
  - [Tests](#tests)
  - [Questions](#questions)
 
- [![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)]
+ <br />
+ <br />
+
+ [!License: ${license}(https://img.shields.io/badge/License-${license}-yellow.svg)]
 
  ## Description
  ${description}
 
+ <br />
+ <br />
+
  ## Installation
  ${installation}
+
+ <br />
+ <br />
 
  ## Usage
  ${usage}
 
+ <br />
+ <br />
+
  ## License
  This project is covered under the ${license} license.
+ 
+ <br />
+ <br />
 
  ## Contributing
  ${contributing}
  
+ <br />
+ <br />
+
  ## Tests
  ${tests}
+
+<br />
+<br />
 
  ## Questions
  ${questions}
  Reach me with additional questions at:
+ <br />
  [GitHub URL](https://www.github.com/${github}/)
+ <br />
  [Email Me](mailto:${email})
   `;
 
@@ -94,6 +117,7 @@ inquirer
         message: 'Peviously asked questions?',
     },
   ])
+
   .then((answers) => {
     const readmeContent = generateREADME(answers);
 
