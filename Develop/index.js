@@ -17,7 +17,7 @@ const generateREADME = ({ title, description, installation, usage, license,
  <br />
  <br />
 
- [!License: ${license}(https://img.shields.io/badge/License-${license}-yellow.svg)]
+ ![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)
 
  ## Description
  ${description}
@@ -57,6 +57,8 @@ const generateREADME = ({ title, description, installation, usage, license,
 
  ## Questions
  ${questions}
+ <br />
+ <br />
  Reach me with additional questions at:
  <br />
  [GitHub URL](https://www.github.com/${github}/)
